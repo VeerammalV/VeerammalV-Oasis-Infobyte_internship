@@ -1,0 +1,301 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: red;
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 6%;
+}
+.detel h1{
+    font-size: 50px;
+    color: black;
+    justify-content: left;
+    margin-bottom:10px ;
+}
+.detel h3{
+    padding: 5px;
+    color: orange;
+    font-size: 25px;
+    font-style: normal;
+}
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+.name{
+    text-align: left;
+}
+.detel a{
+    background:#212121 ;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s; 
+}
+.images:hover .shape{
+     bottom: 40px;
+}
+.images:hover .girl{
+    left: 45%;
+}
+
+
+/* ------------- home ----------- */
+
+.para{
+    font-size: large;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+}
+.ski{
+    color: orange;
+}
+.skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+.skill-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background:grey;
+    height: 25px;
+    z-index: -1;
+    border-radius: 50px;
+    position: absolute;
+}
+.skill-fill{
+    background: orange;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:30px ;
+    overflow: hidden;
+}
+.skill-percent{
+    font-size: 20px;
+    color:grey;
+}
+.html{
+    animation: html 2s;
+    width: 70%;
+}
+.css{
+    animation:css 2s ;
+    width: 70%;
+}
+.java{
+    animation:java 2s;
+    width: 65%;
+}
+.javascript{
+    animation: javascript 2s;
+    width: 30%;
+}
+.sql{
+    animation: sql 2s;
+    width: 75%;
+}
+.python{
+    animation: python 2s;
+    width: 65%;
+}
+.c{
+    animation: c 2s;
+    width: 50%;
+}
+.matlab{
+    animation: matlab 2s;
+    width: 80%;
+}
+.latex{
+    animation: latex 2s;
+    width: 90%;
+}
+@keyframes html{
+    from{width: 0;}
+    to{width: 70%;}
+}
+@keyframes css{
+    from{width: 0;}
+    to{width: 70%;}
+}
+@keyframes java{
+    from{width: 0;}
+    to{width: 65%;}
+}
+@keyframes javascript{
+    from{width: 0;}
+    to{width: 30%;}
+}
+@keyframes sql{
+    from{width: 0;}
+    to{width: 75%;}
+}
+@keyframes c{
+    from{width: 0;}
+    to{width: 50%;}
+}
+@keyframes python{
+    from{width: 0;}
+    to{width: 65%;}
+}
+@keyframes latex{
+    from{width: 0;}
+    to{width: 90%;}
+}
+@keyframes matlab{
+    from{width: 0;}
+    to{width: 80%;}
+}
+
+/* ------------ skills ---------- */
+
+span{
+    color: orange;
+}
+p{
+    font-size: medium;
+    line-height: 1.7;
+}
+.aboutme{
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: medium;
+}
+legend{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.aboutme{
+    row-gap: 20;
+    padding-left: 20px;
+}
+.aboutme i{
+    font-size: 12px;
+    display: inline-flex;
+    flex-direction:column;
+    color: rgb(208, 208, 208);
+}
+
+/* ---------- about me ---------- */
+.contact{
+    margin-left: 150px;
+    margin-right: 150px;
+    row-gap: 20;
+    padding-left: 20px;
+}
+.icons a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    font-size: medium;
+}
+.icons i{
+    font-size: 22px;
+}
+.icons i:hover{
+    color: orange;
+}
+.icons a:hover{
+    color: orange;
+}
+.socialicons a{
+    justify-content: space-evenly;
+    align-items:center;
+    display: inline-block;
+    min-width: 3px;
+    height: 34px;
+    border-radius: 30%;
+    padding-left: 100px;
+}
+.socialicons i{
+    font-size: 27px;
+    color: #212121;
+}
+.socialicons i:hover{
+    color: orange;
+}
+
+/* --------- contact ------------ */
+
+.codeicon i{
+    font-size: 23px;
+    color: #212121; 
+    text-align: left;
+    text-decoration: none;
+    margin-right: 147px;
+}
+.codeicon i:hover{
+    color: orange;
+}
