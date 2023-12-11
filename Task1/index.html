@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS5 Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <img src="logo.jpg" class="logo">
+        <nav>
+            <ul id="menuList">
+            <li><a href="">Game Controllers</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Media Remote</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+        </nav>
+        <img src="menu.jpg" class="menu" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS5 DualSense Controller</h2>
+                <h3>Wireless Controller for PlayStation 5</h3>
+                <p>(Compatibale Generic)</p>
+                <h4>$479.99</h4>
+                <button type="button">Buy Now</button onclick="buynow()">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-2">
+        <img src="ps5.jpg" class="psimg">
+        <h2>Bring gaming worlds to life</h2> 
+     </div>
+    
+    <div class="container2">
+
+    <div class="box-container">
+
+        <div class="box"><br>
+            <h3>adaptive triggers</h3><br>
+            <p>Dynamic resistance mimics the tension of interactions with in-game gear and objects 
+                in select PS5<sup><small>TM</small></sup> games.</p>
+            <a href="" class="btn"><small>learn more</small></a>
+        </div>
+    
+        <div class="box"><br>
+            <h3>haptic feedback</h3><br>
+            <p>Responsive vibrations react to your in-game choices and simulate environmental factors 
+                in select PS5 games.</p>
+            <a href="" class="btn"><small>learn more</small></a>
+        </div>
+
+        <div class="box">
+            <h3>speak with other players easily</h3><br>
+            <p>Start a conversion with the microphone.Turn it off with a dedicated mute button when you 
+                need to focus on your game.</p>
+            <a href="" class="btn"><small>learn more</small></a>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="pic">
+        <h3>Unleash the power of your PS5 console with PlayStation Plus</h3><br>
+        <p>Discover your next great adventure with hundreds of current and classic games, <br> limited-time trails, 
+            online multiplayer, member-exclusive discounts and more, <br> with a choice of three membership options.</p><br>
+        <button type="button" class="btn">Explore Now</button>
+        <img src="wallpaper.jpg" class="game">
+    </div>
+    <div class="container3">
+        <img src="logo.jpg" class="logo">&nbsp;<small>PlayStation 5</small><hr>
+        <p>All rights reserved &copy; 2023 Sony Interactive Entertainment. <br>All content, game titles, trade names and
+        artwork, associated imagery are trademarks copyright material of their respective owners. <br></p>
+        <div class="social-links">
+            <h4>Connect</h4>
+            <a href="#">
+                <i class="fa-brands fa-square-x-twitter"> </i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-square-facebook"> </i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"> </i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px"){
+            menuList.style.maxHeight="130px";
+        }
+        else{
+            menuList.style.maxHeight="0px";
+        }
+        }
+    </script>
+</body>
+</html>
